@@ -48,7 +48,7 @@ class At(BaseModel):
         `atuserids` 与 `atall` 必须选填一个，若只选 `atall` 则对应值必须填 `True`，否则会发送失败.
 
         Args:
-            atuserids (list[str], optional): userid 为企业后台通讯录中成员录入的成员 ID 字段.
+            atuserids (list[str], optional): userid 为企业后台通讯录中成员录入的成员 ID 字段
             atall (bool, optional): @全体成员
         """
         super().__init__(atuserids=atuserids, atall=atall)
@@ -79,7 +79,7 @@ class Markdown(BaseModel):
         """Markdown 消息
 
         Args:
-            content (str): Markdown 格式的消息内容，总长度不得超过 2028 个字符
+            content (str): Markdown 格式的消息内容，总长度不得超过 2k 个字符
 
         Notes:
             支持的语法子集:

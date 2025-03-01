@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2025-present jiwen <ji.wen@foxmail.com>
+#
+# SPDX-License-Identifier: MIT
 import pytest
 import httpx
 from infoflow_robot._robot import Robot, _MsgResponse
